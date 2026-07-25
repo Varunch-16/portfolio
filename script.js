@@ -53,12 +53,6 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   });
 });
 
-const cursorGlow = document.getElementById("cursorGlow");
-
-window.addEventListener("mousemove", (event) => {
-  cursorGlow.style.left = `${event.clientX}px`;
-  cursorGlow.style.top = `${event.clientY}px`;
-});
 
 const revealElements = document.querySelectorAll(".reveal");
 
