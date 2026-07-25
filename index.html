@@ -1,62 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="img/logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sai Varun Chetrypally portfolio - Full Stack Developer, Backend Developer, AI/ML projects, Python, Node.js, React.js, SQL." />
+  <title>Sai Varun Chetrypally | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="left">Varun's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="logo" aria-label="Sai Varun Chetrypally home">
+        <span class="logo-mark">SV</span>
+        <span class="logo-text">Sai Varun</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publication">Publication</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">M.S. Computing & Information Systems • Youngstown State University</p>
+          <h1>Building practical software with clean backend logic, strong data workflows, and AI-powered features.</h1>
+          <p class="hero-subtitle">
+            I’m <strong>Sai Varun Chetrypally</strong>, a graduate student focused on
+            <span class="typing" id="typingText">Full Stack Development</span>.
+            I build full-stack applications, REST APIs, database-backed systems, and applied AI/ML projects using Python, Node.js, React.js, SQL, and modern development tools.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="pdf/Sai_Varun_Chetrypally_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+
+          <div class="hero-meta" aria-label="Quick profile facts">
+            <div>
+              <span class="meta-number">4.0</span>
+              <span class="meta-label">Graduate GPA</span>
             </div>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="firstsection">
-            <div class="leftsection">
-                Hi, My name is <span class="purple">Varun</span>
-                <div> and i am a passinoate</div>
-                <span id="element"></span><br>
-                <div class="button">
-                    <a href="pdf/varun.pdf" download><button class="btn">Download Resume</button></a>
-                    <a href="https://www.linkedin.com/in/sai-varun-54b9b0246" target="_blank"><button class="btn">Visit
-                            linkedin</button></a>
-                </div>
+            <div>
+              <span class="meta-number">2026</span>
+              <span class="meta-label">Expected Graduation</span>
             </div>
-            <div class="rightsection"><img src="img/web.png" alt="no"></div>
-        </section>
-    </main>
-    <footer class="footer">
-        <div class="footer-first">
-            Copyright &#169; VarunsPortfolio | All rights reserved
+            <div>
+              <span class="meta-number">IJRAR</span>
+              <span class="meta-label">Published Paper</span>
+            </div>
+          </div>
         </div>
-    </footer>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Java Programmer.', 'Web Developer.'],
-            typeSpeed: 50,
-        });
-    </script>
+        <aside class="hero-card reveal delay-1" aria-label="Developer profile card">
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="profile-card">
+            <div class="avatar">SV</div>
+            <h2>Sai Varun Chetrypally</h2>
+            <p>Full Stack Developer • Backend APIs • AI/ML Projects</p>
+            <div class="code-card">
+<pre><code>const focus = [
+  "Python",
+  "Node.js",
+  "React.js",
+  "REST APIs",
+  "SQL",
+  "AI/ML"
+];</code></pre>
+            </div>
+            <div class="social-row">
+              <a href="https://github.com/Varunch-16" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/in/saivarunch" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="mailto:schetrypally@student.ysu.edu">Email</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>What I do and how I work</h2>
+        </div>
+        <div class="about-content reveal delay-1">
+          <p>
+            I am a Master’s student in Computing and Information Systems with a background in Electronics and Communication Engineering. My work focuses on building useful applications that connect user-facing interfaces, backend services, databases, and intelligent automation.
+          </p>
+          <p>
+            I like working through problems step by step: understanding the user need, designing the data flow, building the backend logic, testing carefully, documenting the system, and improving the experience based on feedback.
+          </p>
+
+          <div class="value-grid">
+            <article>
+              <h3>What I can give</h3>
+              <p>Reliable development support, clean documentation, debugging, testing, and strong willingness to learn new tools quickly.</p>
+            </article>
+            <article>
+              <h3>Current focus</h3>
+              <p>Full-stack development, backend APIs, data-driven applications, AI integrations, Java/Spring Boot learning, and cloud fundamentals.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools and technologies I work with</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Programming</h3>
+            <div class="chips">
+              <span>Python</span><span>JavaScript</span><span>Node.js</span><span>C++</span><span>SQL</span><span>PHP</span>
+            </div>
+          </div>
+          <div class="skill-card reveal delay-1">
+            <h3>Web & Backend</h3>
+            <div class="chips">
+              <span>React.js</span><span>FastAPI</span><span>Flask</span><span>REST APIs</span><span>JSON</span><span>HTML5</span><span>CSS3</span>
+            </div>
+          </div>
+          <div class="skill-card reveal delay-2">
+            <h3>Databases & Tools</h3>
+            <div class="chips">
+              <span>MySQL</span><span>SQLite</span><span>Oracle SQL</span><span>Git</span><span>GitHub</span><span>VS Code</span>
+            </div>
+          </div>
+          <div class="skill-card reveal delay-3">
+            <h3>AI & Data</h3>
+            <div class="chips">
+              <span>TensorFlow</span><span>Machine Learning</span><span>LangChain</span><span>ChromaDB</span><span>Pandas</span><span>NumPy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work</h2>
+          <p class="section-note">Real projects focused on backend development, full-stack systems, AI/ML, databases, testing, and documentation.</p>
+        </div>
+
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="backend">Backend</button>
+          <button class="filter-btn" data-filter="ai">AI/ML</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-category="backend">
+            <div class="project-top">
+              <span class="project-tag">Backend</span>
+              <span class="project-number">01</span>
+            </div>
+            <h3>Product and Inventory Management Backend System</h3>
+            <p class="tech">Node.js • Express.js • MySQL • REST APIs • JSON • Git</p>
+            <p>
+              Developed a backend system to manage product and inventory records with API endpoints for creating, searching, updating, and organizing structured business data.
+            </p>
+            <p>
+              Built SQL-backed data workflows, tested API responses, debugged backend logic, and documented request/response formats to support maintainable application development.
+            </p>
+          </article>
+
+          <article class="project-card reveal delay-1" data-category="ai backend">
+            <div class="project-top">
+              <span class="project-tag">AI + Full Stack</span>
+              <span class="project-number">02</span>
+            </div>
+            <h3>DocSense</h3>
+            <p class="tech">Python • FastAPI • React.js • REST APIs • LangChain • ChromaDB</p>
+            <p>
+              Developed an AI-powered document processing application with backend workflows for file upload, text extraction, semantic search, and response generation.
+            </p>
+            <p>
+              Integrated retrieval workflows, tested backend endpoints, debugged application behavior, and documented API routes and setup steps for future improvements.
+            </p>
+          </article>
+
+          <article class="project-card reveal delay-2" data-category="ai">
+            <div class="project-top">
+              <span class="project-tag">Computer Vision</span>
+              <span class="project-number">03</span>
+            </div>
+            <h3>Pneumonia Detection Using EfficientNetB0</h3>
+            <p class="tech">Python • TensorFlow • EfficientNetB0 • CNN • Flask • Matplotlib</p>
+            <p>
+              Developed a deep learning image classification system to detect pneumonia from chest X-ray images using preprocessing, model prediction, testing, and evaluation workflows.
+            </p>
+            <p>
+              Published a research paper based on this project in the International Journal of Research and Analytical Reviews, documenting model results, validation approach, and findings.
+            </p>
+          </article>
+
+          <article class="project-card reveal delay-3" data-category="software">
+            <div class="project-top">
+              <span class="project-tag">Software Engineering</span>
+              <span class="project-number">04</span>
+            </div>
+            <h3>AI-Powered Code Analyzer</h3>
+            <p class="tech">Python • C++ • Object-Oriented Programming</p>
+            <p>
+              Designed a code analysis system supporting lexical analysis, parsing, semantic validation, intermediate execution, and structured code review logic.
+            </p>
+            <p>
+              Applied object-oriented programming, debugging, and testing to identify syntax issues, validate code behavior, and improve software reliability.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section publication" id="publication">
+      <div class="container">
+        <div class="publication-card reveal">
+          <div>
+            <p class="eyebrow">Publication</p>
+            <h2>Pneumonia Detection in Chest X-ray Images Using EfficientNetB0</h2>
+            <p>
+              Published in the International Journal of Research and Analytical Reviews (IJRAR), Volume 11, Issue 2, June 2024, Pages 718–727.
+            </p>
+            <p class="authors">
+              Authors: KVBL. Deepthi, Chetrypally Sai Varun, Nikitha Padakanti, Pragna Jindam
+            </p>
+          </div>
+          <a class="btn secondary" href="http://www.ijrar.org/viewfull.php?&p_id=IJRAR24B3948" target="_blank" rel="noopener">View Paper</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Professional background</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="date">Summer 2023</p>
+              <h3>Web Development Intern</h3>
+              <p class="company">Defense Research & Development Organization – ASL Division</p>
+              <ul>
+                <li>Supported the development of a database-backed web application for structured operational records.</li>
+                <li>Worked with MySQL, SQL queries, backend logic, testing, troubleshooting, and documentation.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <p class="date">2025–Present</p>
+              <h3>Student Employee</h3>
+              <p class="company">CFA / On-Campus Dining, Youngstown State University</p>
+              <ul>
+                <li>Support daily operations in a fast-paced environment with professionalism and dependable service.</li>
+                <li>Received the Best Employee Award in the spring for strong performance and reliability.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-card reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something useful.</h2>
+        <p>
+          I am currently looking for internships, co-ops, and entry-level opportunities in full-stack development, backend development, software engineering, AI/ML, and IT application support.
+        </p>
+
+        <div class="contact-links">
+          <a href="mailto:schetrypally@student.ysu.edu">schetrypally@student.ysu.edu</a>
+          <a href="tel:+12342751234">+1 234 275 1234</a>
+          <a href="https://github.com/Varunch-16" target="_blank" rel="noopener">github.com/Varunch-16</a>
+          <a href="https://www.linkedin.com/in/saivarunch" target="_blank" rel="noopener">linkedin.com/in/saivarunch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sai Varun Chetrypally. Built with HTML, CSS, and JavaScript.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
