@@ -1,30 +1,41 @@
-# Sai Varun Chetrypally Portfolio
+# Sai Varun Chetrypally — Portfolio
 
-Modern one-page portfolio built with HTML, CSS, and JavaScript.
+This is my personal portfolio website. It highlights my current work in software development, backend APIs, database-backed applications, full-stack projects, and applied AI/ML systems.
 
-## How to update your GitHub portfolio
+## Live Website
 
-1. Replace your existing `index.html` with the new `index.html`.
-2. Replace your existing `style.css` with the new `style.css`.
-3. Add the new `script.js` file to your repository.
-4. Put your latest resume PDF inside the `pdf` folder and name it:
+https://varunch-16.github.io/portfolio/
 
-   `Sai_Varun_Chetrypally_Resume.pdf`
+## About Me
 
-5. Commit and push:
+I am pursuing my Master of Science in Computing and Information Systems at Youngstown State University. My current focus is building practical software projects using Python, Node.js, React.js, SQL, REST APIs, and Git.
 
-```bash
-git add index.html style.css script.js pdf/Sai_Varun_Chetrypally_Resume.pdf
-git commit -m "Update portfolio with new projects and resume"
-git push
-```
+## Featured Projects
 
-## Sections included
+### Product and Inventory Management Backend System
+A backend project built with Node.js, Express.js, MySQL, REST APIs, JSON, and Git. It manages product and inventory records through API endpoints for creating, searching, updating, and organizing structured data.
 
-- Hero
-- About
-- Skills
-- Projects
-- Publication
-- Experience
-- Contact
+### DocSense
+An AI-powered document processing application built with Python, FastAPI, React.js, REST APIs, LangChain, and ChromaDB. It supports document upload, text processing, semantic search, and response generation.
+
+### Pneumonia Detection Using EfficientNetB0
+A deep learning project focused on pneumonia detection from chest X-ray images using Python, TensorFlow, EfficientNetB0, CNNs, Flask, and Matplotlib. A research paper based on this project was published in IJRAR.
+
+### AI-Powered Code Analyzer
+A software engineering project using Python, C++, and object-oriented programming concepts to support lexical analysis, parsing, semantic validation, and code review logic.
+
+## Skills
+
+Python, JavaScript, Node.js, React.js, FastAPI, Flask, REST APIs, SQL, MySQL, SQLite, HTML5, CSS3, Git, GitHub, TensorFlow, Machine Learning, Debugging, Testing, Technical Documentation.
+
+## Resume
+
+The resume button on the website links to:
+
+pdf/Sai_Varun_Chetrypally_Resume.pdf
+
+## Contact
+
+- Email: schetrypally@student.ysu.edu
+- LinkedIn: https://www.linkedin.com/in/saivarunch
+- GitHub: https://github.com/Varunch-16
